@@ -1,11 +1,11 @@
 # CodeIgniterBlog
 
 Simple blogging website developed using PHP CodeIgniter and Bootstrap.
-CodeIgniter Version: 4.0.4
-Bootstrap Version: 4.5.2
-XAMPP Version: 3.2.4
-PHP version: 7.2.32
-Features:
+  CodeIgniter Version: 4.0.4
+  Bootstrap Version: 4.5.2
+  XAMPP Version: 3.2.4
+  PHP version: 7.2.32
+  Features:
   1. Signup
   2. Login
   3. Show user profile
