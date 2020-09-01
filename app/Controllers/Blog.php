@@ -34,7 +34,7 @@ class Blog extends BaseController
 						$model->save([
 							"title"=> $this->request->getVar("title"),
 							"body"=> $this->request->getVar("body"),
-							"slug"=> $this->request->getVar("title"),
+							"slug"=> url_title($this->request->getVar("title")),
 							"author"=> session()->get("name"),
 						]);
 						$session = \Config\Services::session();
@@ -67,7 +67,7 @@ class Blog extends BaseController
 							"id"=> session()->get('blog_id'),
 							"title"=> $this->request->getVar("title"),
 							"body"=> $this->request->getVar("body"),
-							"slug"=> $this->request->getVar("title"),
+							"slug"=> url_title($this->request->getVar("title")),
 						]);
 						$session = \Config\Services::session();
 						$session->setFlashdata('success', 'Blog updated successfully!');
