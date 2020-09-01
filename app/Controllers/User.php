@@ -23,7 +23,7 @@ class User extends BaseController
                 if(!$this->validate($rules)) {
                     $data['validation'] = $this->validator;
                 } else {
-                    $model = new UserMOdel();
+                    $model = new UserModel();
                     $userData = [
                         "name"=> $this->request->getVar("name"),
                         "email"=> $this->request->getVar("email"),
@@ -124,7 +124,7 @@ class User extends BaseController
                 if(!$this->validate($rules)) {
                     $data['validation'] = $this->validator;
                 } else { 
-                    $model = new UserMOdel();
+                    $model = new UserModel();
                     $userData = [
                         "id" => session()->get('id'),
                         "name"=> $this->request->getVar("name"),
